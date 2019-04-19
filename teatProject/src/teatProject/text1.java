@@ -17,12 +17,16 @@ public class text1{
 		ResultSetMetaData rsmd = rs.getMetaData();
 		StringBuffer data = new StringBuffer();
 		while(rs.next()) {
+			
+			
 			data.append(rsmd.getColumnName(1) +" = "+rs.getString(rsmd.getColumnName(1))+"\n");
+			
+			
 			String psw1 = rs.getString(rsmd.getColumnName(2));
 			char[] chars = psw1.toCharArray();
 			System.out.println(chars);
-			char s = 0x43;
-			System.out.println(String.valueOf(s));
+			
+
 			data.append(rsmd.getColumnName(2) +" = "+String.valueOf(chars)+"\n");
 			data.append(rsmd.getColumnName(3) +" = "+rs.getString(rsmd.getColumnName(3))+"\n");
 			data.append(rsmd.getColumnName(4) +" = "+rs.getString(rsmd.getColumnName(4))+"\n");

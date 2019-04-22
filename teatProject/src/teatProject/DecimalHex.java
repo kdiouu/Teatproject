@@ -1,12 +1,10 @@
 package teatProject;
 
+/*
+ *  字母A -- 65 (Decimal) -- 41(Hex)
+ * 
+ */
 
-import java.awt.Graphics;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.util.Arrays;
 
 public class DecimalHex {
